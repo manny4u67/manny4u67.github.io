@@ -1,180 +1,79 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How to Make Killer Videos</title>
+    <title>My Apps</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts - Inter -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
     <style>
+        /* Apply Inter font and a subtle background to the body */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f8f8f8; /* Light gray background */
-        }
-        .container {
-            max-width: 960px; /* Max width for content */
-        }
-        /* Custom scrollbar for better aesthetics */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-            border-radius: 10px;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #888;
-            border-radius: 10px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #555;
+            background-color: #f3f4f6; /* Light gray background */
         }
     </style>
 </head>
-<body class="text-gray-800 antialiased leading-relaxed">
+<body class="min-h-screen flex flex-col items-center justify-center p-4">
 
-    <!-- Header Section -->
-    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-8 shadow-lg">
-        <div class="container mx-auto px-4 text-center">
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-2">How to Make Killer Videos</h1>
-            <p class="text-lg sm:text-xl font-light opacity-90">A Comprehensive Guide to Engaging and Successful Content Creation</p>
+    <!-- Main Container for the App Screen -->
+    <div class="bg-white rounded-xl shadow-2xl p-6 sm:p-8 md:p-10 lg:p-12 max-w-md w-full border border-gray-200">
+        <!-- Main Title -->
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-800 mb-8 text-center">
+            My App
+        </h1>
+
+        <!-- Menu Buttons Section -->
+        <div class="space-y-4">
+            <!-- Example Button 1 -->
+            <button
+                class="w-full py-3 px-6 bg-blue-600 hover:bg-red-800 text-white font-semibold rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75"
+                onclick="goToPage('youtube.html')">
+                Youtube
+            </button>
+
+            <!-- Example Button 2 -->
+            <button
+                class="w-full py-3 px-6 bg-blue-600 hover:bg-red-800 text-white font-semibold rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75"
+                onclick="goToPage('settings.html')">
+                Settings
+            </button>
+
+            <!-- Example Button 3 -->
+            <button
+                class="w-full py-3 px-6 bg-blue-600 hover:bg-red-800 text-white font-semibold rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-75"
+                onclick="goToPage('profile.html')">
+                Profile
+            </button>
+
+            <!-- You can add more buttons here -->
+            <button
+                class="w-full py-3 px-6 bg-blue-600 hover:bg-red-800 text-white font-semibold rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-75"
+                onclick="goToPage('about-us.html')">
+                About Us
+            </button>
         </div>
-    </header>
+    </div>
 
-    <!-- Main Content Area -->
-    <main class="container mx-auto px-4 py-12">
-        <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8 md:p-10 mb-12 border border-gray-200">
-            <p class="text-lg sm:text-xl text-gray-700 leading-relaxed mb-6">
-                This guide outlines a comprehensive five-phase process for creating highly engaging and successful videos,
-                emphasizing quality over quantity and viewer-centric content. Master these steps to transform your video ideas into captivating experiences.
-            </p>
-
-            <!-- Phase 1: Planning and Idea Generation -->
-            <section id="phase1" class="mb-10">
-                <h2 class="text-3xl sm:text-4xl font-bold text-blue-700 mb-6 pb-2 border-b-2 border-blue-200">Phase 1: Planning and Idea Generation</h2>
-                <p class="text-base sm:text-lg text-gray-700 mb-4">
-                    Before any filming begins, thorough planning and idea generation are crucial for a video's success.
-                    The core principle is to develop a "killer idea" that will compel viewers to click.
-                </p>
-                <ul class="list-disc pl-6 space-y-3 text-gray-600">
-                    <li><strong class="font-semibold text-blue-600">Recognize the crucial importance:</strong> An uninteresting idea will result in no clicks, regardless of video quality.</li>
-                    <li><strong class="font-semibold text-blue-600">Dedicate significant time:</strong> Spend days or even weeks developing video concepts.</li>
-                    <li><strong class="font-semibold text-blue-600">Prioritize quality ideas:</strong> One exceptional video can significantly outperform numerous average ones.</li>
-                    <li><strong class="font-semibold text-blue-600">Continuously seek ways:</strong> Obsess over how to generate better ideas.</li>
-                    <li><strong class="font-semibold text-blue-600">Utilize tools:</strong> Sketch ideas using apps like PlannerVid to evaluate them objectively.</li>
-                    <li><strong class="font-semibold text-blue-600">Assess compellingness:</strong> Ask yourself: Are these killer video ideas? Do they feel like they belong on a 100k subscriber channel?</li>
-                    <li><strong class="font-semibold text-blue-600">Trust your intuition:</strong> Listen to your gut feeling about your ideas.</li>
-                    <li><strong class="font-semibold text-blue-600">Compare and contrast:</strong> Analyze your channel and ideas against successful channels in your niche.</li>
-                    <li><strong class="font-semibold text-blue-600">Select broad appeal:</strong> Choose ideas targeting millions rather than just a few thousand viewers or existing subscribers.</li>
-                </ul>
-            </section>
-
-            <!-- Phase 2: Crafting the Killer Title and Thumbnail (TNT) -->
-            <section id="phase2" class="mb-10">
-                <h2 class="text-3xl sm:text-4xl font-bold text-blue-700 mb-6 pb-2 border-b-2 border-blue-200">Phase 2: Crafting the Killer Title and Thumbnail (TNT)</h2>
-                <p class="text-base sm:text-lg text-gray-700 mb-4">
-                    Contrary to common practice, design your title and thumbnail <em class="font-semibold text-blue-600">first</em>, not last.
-                    These are the initial elements viewers see and are critical for their decision to click.
-                </p>
-                <ul class="list-disc pl-6 space-y-3 text-gray-600">
-                    <li><strong class="font-semibold text-blue-600">Guide subsequent work:</strong> A compelling title and thumbnail will guide all subsequent filming and editing.</li>
-                    <li><strong class="font-semibold text-blue-600">Intrigue and appeal:</strong> Aim for titles that are intriguing and appeal to a large audience. Avoid generic titles like "life update."</li>
-                    <li><strong class="font-semibold text-blue-600">Specific yet broad:</strong> Titles should be specific enough to intrigue, yet broad enough for wide appeal (e.g., "junior software engineer and youtuber a typical day in my life" is better than "life update").</li>
-                    <li><strong class="font-semibold text-blue-600">Refine titles:</strong> Change overly general titles to be more specific and intriguing.</li>
-                    <li><strong class="font-semibold text-blue-600">Cohesive unit:</strong> Design the title and thumbnail as a cohesive unit to maximize interest and intrigue.</li>
-                    <li><strong class="font-semibold text-blue-600">Visualize together:</strong> Sketch thumbnails alongside titles to see their combined impact.</li>
-                    <li><strong class="font-semibold text-blue-600">Holistic perspective:</strong> Maintain a holistic view of the title and thumbnail combination.</li>
-                    <li><strong class="font-semibold text-blue-600">Complement and add intrigue:</strong> Ensure the thumbnail complements the title and adds intrigue, rather than simply restating the title.</li>
-                    <li><strong class="font-semibold text-blue-600">Envision and refine:</strong> Practice envisioning an intriguing video's title and thumbnail, then record what makes it compelling. Repeat until it feels right.</li>
-                    <li><strong class="font-semibold text-blue-600">Confidence check:</strong> Before proceeding, be approximately 90% confident in your idea and TNT combination.</li>
-                </ul>
-            </section>
-
-            <!-- Phase 3: Scripting the Video -->
-            <section id="phase3" class="mb-10">
-                <h2 class="text-3xl sm:text-4xl font-bold text-blue-700 mb-6 pb-2 border-b-2 border-blue-200">Phase 3: Scripting the Video</h2>
-                <p class="text-base sm:text-lg text-gray-700 mb-4">
-                    Scripting is often the most time-consuming phase but is essential for simplifying filming and editing.
-                </p>
-                <ul class="list-disc pl-6 space-y-3 text-gray-600">
-                    <li><strong class="font-semibold text-blue-600">Use a guiding template:</strong> Utilize a template or set of questions for scripting.</li>
-                    <li><strong class="font-semibold text-blue-600">For educational/tutorial videos, answer:</strong> What action should the viewer take for their desired result? What emotions should they feel to take that action? What information do they need to know?</li>
-                    <li><strong class="font-semibold text-blue-600">For entertainment videos, answer:</strong> What's the big interesting idea? How should the viewer feel while watching? What elements will make the video entertaining?</li>
-                    <li><strong class="font-semibold text-blue-600">Refer back constantly:</strong> Ensure every line contributes to these core answers.</li>
-                    <li><strong class="font-semibold text-blue-600">Remove irrelevant parts:</strong> Cut any script parts that don't contribute to the core message.</li>
-                    <li><strong class="font-semibold text-blue-600">Include visual notes:</strong> Add notes for visuals alongside each script section.</li>
-                    <li><strong class="font-semibold text-blue-600">Categorize visuals:</strong> (e.g., talking head, close-up, on-screen text).</li>
-                    <li><strong class="font-semibold text-blue-600">Plan for revisions:</strong> Your first draft will not be perfect.</li>
-                    <li><strong class="font-semibold text-blue-600">Quick rough draft:</strong> Focus on completing a rough draft without striving for immediate perfection.</li>
-                    <li><strong class="font-semibold text-blue-600">Scripting saves time:</strong> Time invested here simplifies filming and editing.</li>
-                    <li><strong class="font-semibold text-blue-600">Design the hook and intro:</strong> This is the most critical part, aligning with the title and thumbnail.</li>
-                    <li><strong class="font-semibold text-blue-600">Instant confirmation:</strong> The viewer should feel "This is exactly what I was expecting" within the first three seconds.</li>
-                    <li><strong class="font-semibold text-blue-600">Never ask for likes/subscribers initially:</strong> This is self-serving and wastes viewer time.</li>
-                    <li><strong class="font-semibold text-blue-600">Provide immediate value:</strong> Focus on what value you can give to the viewer in the hook/intro.</li>
-                </ul>
-            </section>
-
-            <!-- Phase 4: Filming Efficiently -->
-            <section id="phase4" class="mb-10">
-                <h2 class="text-3xl sm:text-4xl font-bold text-blue-700 mb-6 pb-2 border-b-2 border-blue-200">Phase 4: Filming Efficiently</h2>
-                <p class="text-base sm:text-lg text-gray-700 mb-4">
-                    If the script is well-prepared, filming should be a quick process.
-                </p>
-                <ul class="list-disc pl-6 space-y-3 text-gray-600">
-                    <li><strong class="font-semibold text-blue-600">Create a shot list:</strong> Based on your script's visual notes.</li>
-                    <li><strong class="font-semibold text-blue-600">Use a spreadsheet:</strong> Copy visual notes into a spreadsheet.</li>
-                    <li><strong class="font-semibold text-blue-600">Group by location:</strong> To minimize setup changes.</li>
-                    <li><strong class="font-semibold text-blue-600">Keep accessible:</strong> Have the spreadsheet with you during filming for efficiency.</li>
-                    <li><strong class="font-semibold text-blue-600">"Show, don't tell":</strong> Use visuals to convey information rather than just narration.</li>
-                    <li><strong class="font-semibold text-blue-600">Creative storytelling:</strong> Think creatively about visual storytelling. Observe other YouTubers for inspiration.</li>
-                    <li><strong class="font-semibold text-blue-600">Have fun:</strong> Enjoy the filming process.</li>
-                </ul>
-            </section>
-
-            <!-- Phase 5: Editing for Perfect Pacing -->
-            <section id="phase5" class="mb-10">
-                <h2 class="text-3xl sm:text-4xl font-bold text-blue-700 mb-6 pb-2 border-b-2 border-blue-200">Phase 5: Editing for Perfect Pacing</h2>
-                <p class="text-base sm:text-lg text-gray-700 mb-4">
-                    Editing is a vital part of video creation, with pacing being absolutely critical for a killer YouTube video.
-                </p>
-                <ul class="list-disc pl-6 space-y-3 text-gray-600">
-                    <li><strong class="font-semibold text-blue-600">Pacing is key:</strong> Viewers will stop watching if the video is boring or poorly paced.</li>
-                    <li><strong class="font-semibold text-blue-600">Faster than movies:</strong> YouTube requires faster pacing; viewers leave if bored for even 5 seconds.</li>
-                    <li><strong class="font-semibold text-blue-600">Repeated re-watching:</strong> Identify boring or attention-losing segments.</li>
-                    <li><strong class="font-semibold text-blue-600">Aggressive cutting:</strong> Re-edit or completely cut parts where you lose interest.</li>
-                    <li><strong class="font-semibold text-blue-600">Value every second:</strong> Ensure every second of the video adds value.</li>
-                    <li><strong class="font-semibold text-blue-600">Eliminate unnecessary elements:</strong> Like lengthy branded intros or dead space.</li>
-                    <li><strong class="font-semibold text-blue-600">Strive for efficiency:</strong> Convey your point effectively in the shortest possible time.</li>
-                    <li><strong class="font-semibold text-blue-600">Aim to cut 10%:</strong> This usually improves pacing.</li>
-                    <li><strong class="font-semibold text-blue-600">Cut for the viewer:</strong> Be willing to cut parts you personally like if they don't contribute to the video's main point. Remember the video is for the viewer, not the creator's ego.</li>
-                </ul>
-            </section>
-
-            <!-- Overall Considerations -->
-            <section id="overall-considerations" class="mb-10">
-                <h2 class="text-3xl sm:text-4xl font-bold text-blue-700 mb-6 pb-2 border-b-2 border-blue-200">Overall Considerations</h2>
-                <p class="text-base sm:text-lg text-gray-700 mb-4">
-                    YouTube success hinges on viewers clicking your video and then watching or enjoying the entire content.
-                    The three core elements for a killer video are a killer idea, a killer title and thumbnail, and perfect pacing.
-                </p>
-                <ul class="list-disc pl-6 space-y-3 text-gray-600">
-                    <li><strong class="font-semibold text-blue-600">Take your time:</strong> Perfect these key elements.</li>
-                    <li><strong class="font-semibold text-blue-600">Less effort, better results:</strong> Focusing on these elements leads to better outcomes with less struggle.</li>
-                    <li><strong class="font-semibold text-blue-600">Enjoy the process:</strong> This is essential for long-term consistency and sustainability. If it's miserable, you won't continue.</li>
-                    <li><strong class="font-semibold text-blue-600">Success is in the journey:</strong> You are already successful if you enjoy creating killer videos; don't wait for an arbitrary subscriber count.</li>
-                </ul>
-            </section>
-        </div>
-    </main>
-
-    <!-- Footer Section -->
-    <footer class="bg-gray-800 text-white py-6">
-        <div class="container mx-auto px-4 text-center">
-            <p class="text-sm opacity-80">&copy; 2025 Video Creation Guide. All rights reserved.</p>
-        </div>
-    </footer>
-
+    <!-- JavaScript for Page Navigation -->
+    <script>
+        /**
+         * Navigates the browser to a specified URL.
+         * @param {string} url - The URL to navigate to.
+         */
+        function goToPage(url) {
+            // Check if the URL is provided to prevent navigating to an empty string
+            if (url) {
+                window.location.href = url;
+            } else {
+                console.error("Navigation URL is empty or invalid.");
+                // Optionally, display a message to the user using a custom modal or element
+                // alert("Error: Could not navigate. Invalid page URL."); // Not allowed, use custom UI instead
+            }
+        }
+    </script>
 </body>
 </html>
