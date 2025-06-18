@@ -21,6 +21,13 @@
 </head>
 <body class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4 sm:p-6 lg:p-8">
     <!-- Main container for the checklist content. -->
+    <div id="popup" class="fixed top-0 left-0 w-full h-full bg-gray-500 bg-opacity-100 flex justify-center items-center hidden">
+        <div class="bg-white p-4 rounded-md">
+          <h2 class="text-lg font-bold mb-2">Congratulations!</h2>
+          <p class="text-gray-700">You have completed the pre-work success checklist.</p>
+          <button id="close-popup" class="bg-blue-600 hover:bg-blue-800 text-white font-semibold rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75">Close</button>
+        </div>
+      </div>
     <div class="w-full max-w-4xl bg-white rounded-xl shadow-2xl p-6 sm:p-8 lg:p-10">
         <!-- Application title. -->
         <h1 class="text-3xl sm:text-4xl font-extrabold text-center text-gray-800 mb-8 pb-4 border-b-2 border-indigo-200">
@@ -53,9 +60,9 @@
                     <input type="checkbox" id="checkbox-mindset-5" class="mr-3 mt-1 h-5 w-5 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500 cursor-pointer">
                     <label for="checkbox-mindset-5" class="text-base sm:text-lg text-gray-700 flex-1 cursor-pointer">Review your goals/priorities (ensure alignment).</label>
                 </li>
-                <li id="environment-7" class="flex items-start p-4 bg-gray-50 rounded-lg shadow-sm transition-all duration-200 ease-in-out hover:bg-indigo-50">
-                    <input type="checkbox" id="checkbox-environment-6" class="mr-3 mt-1 h-5 w-5 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500 cursor-pointer">
-                    <label for="checkbox-environment-6" class="text-base sm:text-lg text-gray-700 flex-1 cursor-pointer">Pray before beginning work.</label>
+                <li id="mindset-6" class="flex items-start p-4 bg-gray-50 rounded-lg shadow-sm transition-all duration-200 ease-in-out hover:bg-indigo-50">
+                    <input type="checkbox" id="checkbox-mindset-6" class="mr-3 mt-1 h-5 w-5 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500 cursor-pointer">
+                    <label for="checkbox-mindset-6" class="text-base sm:text-lg text-gray-700 flex-1 cursor-pointer">Pray before beginning work.</label>
                 </li>
             </ul>
         </div>
@@ -137,5 +144,25 @@
             });
         });
     </script>
+    <script>
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        const popup = document.getElementById('popup');
+        const closePopupButton = document.getElementById('close-popup');
+      
+        checkboxes.forEach(checkbox => {
+          checkbox.addEventListener('change', () => {
+            const allChecked = Array.from(checkboxes).every(checkbox => checkbox.checked);
+            if (allChecked) {
+              popup.classList.remove('hidden');
+            } else {
+              popup.classList.add('hidden');
+            }
+          });
+        });
+      
+        closePopupButton.addEventListener('click', () => {
+          popup.classList.add('hidden');
+        });
+      </script>
 </body>
 </html>
